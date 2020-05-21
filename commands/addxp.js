@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const color = require("../colors.json");
+const color = require("../config/colors.json");
 const monnaie = require('../database/xp.json');
 const fs = require("fs");
 

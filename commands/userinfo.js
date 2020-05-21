@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const color = require("../colors.json");
+const color = require("../config/colors.json");
 
 module.exports.run = async (bot, message, args) => {
     let zEmbed = new Discord.MessageEmbed()
@@ -10,7 +10,8 @@ module.exports.run = async (bot, message, args) => {
     .addField("**Username**", `${message.author.username}`, true)
     .addField("**ID**", `${message.author.id}`)
     .addField("**Status**", `${message.author.presence.status}`, true)
-    .setFooter(`EpiBot`, bot.user.displayAvatarURL);
+    .setTimestamp()
+    .setFooter('EpiBot by MrBartou', 'https://image.noelshack.com/fichiers/2020/21/3/1589981162-epitech-logo-signature-noir.png');
     message.channel.send(zEmbed)
 }
 
