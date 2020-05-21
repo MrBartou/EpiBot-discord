@@ -2,13 +2,9 @@ const Discord = require("discord.js")
 
 module.exports.run = async (bot, message, args) => {
 
-    message.channel.send("Pinging...").then(m => {
-        let ping = m.createdTimeStamp - message.createdTimeStamp
-        let choices = ["Mon vrai ping est", "Je suis ok, regarde ça"]
-        let response = choices[Math.floor(Math.random() * choices.length)]
+    let début = Date.now();
 
-        m.edit(`${response}: Bot Latency: \`${ping}\`, API Latency: \`${Math.round(bot.ping)}\``)
-    })
+    await message.channel.send("Ping").then(async(m) => await m.edit(`Pong: ${Date.now() - début} ms`));
 }
 module.exports.help = {
     name: "ping"

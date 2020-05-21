@@ -60,12 +60,15 @@ bot.on("message", async message => {
 bot.on('guildMemberAdd', member => {
 
     let newEmbed = new Discord.MessageEmbed()
-    .setDescription(member.user.username + ' **bienvenue sur le serveur de test**')
-    .setFooter(`Nous sommes désormais ` + member.guild.memberCount)
+    .setAuthor("-Nouveaux Membre-")
+    .addField("**bienvenue sur le serveur Epi-Lounge ! :**", `${member.user.username}`)
+    .addField("Nous sommes désormais :", `${member.guild.memberCount}`)
     .setColor('RANDOM')
+    .setTimestamp()
+    .setFooter('EpiBot by MrBartou', 'https://image.noelshack.com/fichiers/2020/21/3/1589981162-epitech-logo-signature-noir.png');
     member.guild.channels.cache.get("690942921318465618").send(newEmbed)
 
-    let membre = member.guild.roles.get("690633705881862235")
-    member.addRole(membre)
+    let membre = member.guild.roles.cache.get("690633705881862235")
+    member.roles.add(membre)
 })
 

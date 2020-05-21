@@ -11,6 +11,7 @@
     "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
     "discord.js": "^12.2.0",
     "fs": "0.0.1-security",
+    "sort-json-array": "^0.1.7",
     "winston": "^3.2.1"
   },
   "devDependencies": {},
