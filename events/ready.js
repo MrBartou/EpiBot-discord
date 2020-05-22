@@ -5,7 +5,7 @@ module.exports = bot => {
 
     let statuses = [
         "!help for commands",
-        "Welcome on Epi-lounge"
+        "Welcome on E-lounge"
     ]
 
     setInterval(function() {

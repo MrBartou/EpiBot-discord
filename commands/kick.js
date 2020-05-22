@@ -21,9 +21,9 @@ module.exports.run = async (bot, message, args) => {
     .addField("Canal", message.channel)
     .addField("Raison", kickReason)
 
-    let kickChannel = message.guild.channels.cache.find(kickChannel => kickChannel.name === "admins");
+    let kickChannel = message.guild.channels.cache.find(kickChannel => kickChannel.name === "logs");
     if(!kickChannel) {
-        return message.channel.send("Canal 'admins' not found. Please create it")
+        return message.channel.send("Canal 'logs' not found. Please create it")
     }
     message.guild.member(kickedUser).kick(kickReason)
     kickChannel.send(kickEmbed)

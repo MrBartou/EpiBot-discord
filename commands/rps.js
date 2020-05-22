@@ -9,8 +9,8 @@ module.exports.run = async (bot, message, args) => {
     var RPSEMBED = new Discord.MessageEmbed()
     .setColor('RANDOM')
     .setAuthor("-Pierre, Papier, Ciseaux-")
-    .addField("**Vous avez sélectionner :**", `${args[0]}`)
-    .addField("**Le bot à sélectionner : **", `${object[calcul]}`)
+    .addField("**Vous avez sélectionné :**", `${args[0]}`)
+    .addField("**Le bot à sélectionné : **", `${object[calcul]}`)
     .setTimestamp()
     .setFooter('EpiBot by MrBartou', 'https://image.noelshack.com/fichiers/2020/21/3/1589981162-epitech-logo-signature-noir.png');
 

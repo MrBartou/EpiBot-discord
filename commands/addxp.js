@@ -4,6 +4,9 @@ const monnaie = require('../database/xp.json');
 const fs = require("fs");
 
 module.exports.run = async (bot, message, args) => {
+
+    if(!message.member.roles.cache.has("702504401302192239")) return message.channel.send("**You can not use this command!**")
+
     let userxp = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     let ajoutmonnaie = parseInt(args[1]);
 

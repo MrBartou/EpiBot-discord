@@ -29,7 +29,7 @@ module.exports.run = async (bot, message, args) => {
         .setAuthor('EpiHelper', 'https://image.noelshack.com/fichiers/2020/21/3/1589981162-epitech-logo-signature-noir.png')
         .setThumbnail('https://image.noelshack.com/fichiers/2020/21/3/1589981162-epitech-logo-signature-noir.png')
         .setDescription(`These are the avaliable commands for the \`EpiBot\` !\nThe bot prefix is: \`!\` `)
-        .addField("Commands for members :", "``help`` ``serverinfo`` ``userinfo`` ``ping`` ``uptime`` ``rps`` ``myxp``")
+        .addField("Commands for members :", "``help`` ``serverinfo`` ``userinfo`` ``ping`` ``uptime`` ``rps`` ``myxp`` ``quiz``")
         .addField("Commands for EpiAmbassadeur :", "``addxp``")
         .addField("Commands for EpiAdmin :", "`Kick` `clear` `say`")
         .setTimestamp()

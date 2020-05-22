@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
     .setAuthor(`${message.guild.name} Info`, 'https://image.noelshack.com/fichiers/2020/21/3/1589981162-epitech-logo-signature-noir.png')
     .setThumbnail('https://image.noelshack.com/fichiers/2020/21/3/1589981162-epitech-logo-signature-noir.png')
     .addField("**Guild Name**", `${message.guild.name}`, true)
-    .addField("**Guild Owner**", `${message.guild.owner}`, true)
+    .addField("**Guild Owner**", "EpiAdmin", true)
     .addField("**Member Count**", `${message.guild.memberCount}`)
     .addField("**More Help ?**", "!help")
     .setTimestamp()
