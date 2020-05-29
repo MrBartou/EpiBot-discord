@@ -66,9 +66,9 @@ bot.on('guildMemberAdd', member => {
     .setColor('RANDOM')
     .setTimestamp()
     .setFooter('EpiBot by MrBartou', 'https://image.noelshack.com/fichiers/2020/21/3/1589981162-epitech-logo-signature-noir.png');
-    member.guild.channels.cache.get("690942921318465618").send(newEmbed)
+    member.guild.channels.cache.get("693064994622930967").send(newEmbed)
 
-    let membre = member.guild.roles.cache.get("690633705881862235")
+    let membre = member.guild.roles.cache.get("710064082656559106")
     member.roles.add(membre)
 })
 

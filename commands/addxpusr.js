@@ -1,19 +1,19 @@
 const Discord = require("discord.js");
 const color = require("../config/colors.json");
-const monnaie = require('../database/xpgroupe.json');
+const monnaie = require('../database/xp.json');
 const fs = require("fs");
 
 module.exports.run = async (bot, message, args) => {
 
     if(!message.member.roles.cache.has("702504401302192239")) return message.channel.send("**You can not use this command!**")
 
-    let userxp = args[0];
+    let userxp = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     let ajoutmonnaie = parseInt(args[1]);
 
-    monnaie[userxp] = {
-        monnaie: monnaie[userxp].monnaie + ajoutmonnaie
+    monnaie[userxp.id] = {
+        monnaie: monnaie[userxp.id].monnaie + ajoutmonnaie
     };
-    fs.writeFile('./database/xpgroupe.json', JSON.stringify(monnaie), err => {
+    fs.writeFile('./database/xp.json', JSON.stringify(monnaie), err => {
         if (err) console.log(err);
     });
 
@@ -30,5 +30,5 @@ module.exports.run = async (bot, message, args) => {
 }
 
 module.exports.help = {
-    name: "addxp"
+    name: "addxpusr"
 }
