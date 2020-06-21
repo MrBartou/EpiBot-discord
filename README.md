@@ -96,16 +96,6 @@ Vous avez des idées, faire remonté des bug, aider dans le développement ?
 - [Github](https://github.com/MrBartou/)
 - [linkedin](https://www.linkedin.com/in/anthony-denin/)
 
-## Copyryth
-
-Pour des raisons de propriétés intelectuel il est interdit :
-
-- D'utiliser ce bot a des fin commercial
-- De suprimer les informations du package.json
-- De supprimer les headers des fichiers
-- De supprimer ou modifier le Footer des Handler
-
-Merci de votre compréhension.
 
 License
 ----
