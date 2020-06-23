@@ -1,6 +1,6 @@
 const Discord = require("discord.js")
 let object = ["Pierre 👊" , "Ciseaux ✌️", "Papier ✋"]
-let calcul = Math.floor((Math.random() * object.length))
+let calcul = Math.floor((Math.random() * 2))
 
 module.exports.run = async (bot, message, args) => {
 
